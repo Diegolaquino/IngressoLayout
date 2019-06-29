@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import CheckBoxes from './components/Filtro';
+import Filtros from './components/Filtro';
+import Filmes from './components/Filmes';
 import './styles.css';
 
 const App = () => (
   <div className="App">
     <section>
-      <CheckBoxes />
+      <Filtros />
+      <Filmes />
     </section>
   </div>
 );

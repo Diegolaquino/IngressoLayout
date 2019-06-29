@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const CheckBoxes = () => (
+const Filtros = () => (
     <div className="container">
         <h2>Filmes</h2>
         <form id="tagForm">
@@ -45,4 +45,4 @@ const CheckBoxes = () => (
     </div>  
 );
 
-export default CheckBoxes;
+export default Filtros;
