@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
-import { Component } from 'react';
+import {  } from 'react';
 import './styles.css';
 
 

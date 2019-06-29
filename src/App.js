@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Filtros from './components/Filtro';
+import Filtros from './components/Filtros';
 import Filmes from './components/Filmes';
 import './styles.css';
 
