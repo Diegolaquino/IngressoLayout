@@ -1,5 +1,31 @@
 .container{
     margin: 0 auto;
     background-color:#333333;
-    color: aliceblue;
+    
+}
+.cartaz{
+    color: #ff7202;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.titulo{
+    font-size: 13px;
+    position: relative;
+    top: 112px;
+    margin-left: 5px; 
+}
+
+.tag{
+    position: relative;
+    font-size: 13px;
+    top: 100px;
+    margin-left: 5px;
+}
+
+.quadroFilme{
+    width: 140px;
+    height: 170px;
+    float: left;
+    background-color: blueviolet;
+    margin-left: 10px;
 }
