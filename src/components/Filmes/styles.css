@@ -9,23 +9,33 @@
     margin-left: 10px;
 }
 .titulo{
-    font-size: 13px;
+    font-size: 15px;
     position: relative;
-    top: 112px;
+    top: 155px;
     margin-left: 5px; 
+    font-weight: 700;
 }
 
 .tag{
     position: relative;
-    font-size: 13px;
-    top: 100px;
+    font-size: 11px;
+    top: 150px;
     margin-left: 5px;
+    padding:5px; 
+    background-color: #33ffcc;
+    text-transform: uppercase;
+    color: black;
 }
 
 .quadroFilme{
     width: 140px;
-    height: 170px;
+    height: 228px;
     float: left;
-    background-color: blueviolet;
     margin-left: 10px;
+    background-size: cover;
+}
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 10px;
 }

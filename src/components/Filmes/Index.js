@@ -5,7 +5,7 @@ import './styles.css';
 
 
 export default class Filmes extends Component{
-    state ={
+    state = {
         infoFilmes: []
     }
 
@@ -17,7 +17,6 @@ export default class Filmes extends Component{
         const api = await axios.create({baseURL: 'https://api-content.ingresso.com/'}).request('v0/templates/highlights/1/partnership/home');
         
         this.setState({ infoFilmes: api.data });
-        console.log(api.data[0]);
     }
 
     render() {
@@ -27,11 +26,12 @@ export default class Filmes extends Component{
                     <div className="cartaz">
                         Em cartaz
                     </div>
+                    <hr></hr>
                     {
                         this.state.infoFilmes.map(filme => 
                             (
-                                <a href="https://www.ingresso.com/" target="_blank">
-                                    <div className="quadroFilme">
+                                <a href= { filme.event.trailers[0].url } target="_blank">
+                                    <div className="quadroFilme" key={filme.event.id} style={{ backgroundImage: `url(${filme.event.images[0].url})` }}>
                                         <span className="tag">{filme.event.tags[0]}</span>
                                         <h2 className="titulo">{filme.event.title}</h2>
                                     </div>
@@ -41,7 +41,6 @@ export default class Filmes extends Component{
                     }     
                 </section>
             </div>
-            );
-        // return <h1>Contagem Filmes: {this.state.infoFilmes.length} </h1>;
+        );
     }
 }
